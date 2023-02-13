@@ -15,3 +15,11 @@ python.exe -m pip install --upgrade pip
   key: vagd3m
 
   pip install python-dotenv
+
+  # picking enviornment variable in deployment
+
+
+$ pip install "python-dotenv[cli]"
+$ dotenv set USER foo
+$ dotenv set EMAIL foo@example.org
+$ dotenv list

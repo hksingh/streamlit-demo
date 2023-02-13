@@ -3,7 +3,7 @@ import streamlit as st #pip install streamlit
 import plotly.graph_objects as go # pip install plotly
 from datetime import datetime # core python module
 from streamlit_option_menu import option_menu # pip install streamlit-option-menu
-from db import getKey
+from dbsetup import getKey
 
 page_title = "Income and Expense Tracker12"
 page_icon=":money_with_wings:"

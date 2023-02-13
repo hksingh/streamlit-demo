@@ -101,6 +101,13 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+# Procfile
+Procfile
+.Procfile/
+
+# shell file
+setup.sh
+
 # Environments
 .env
 .venv

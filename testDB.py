@@ -1,8 +1,8 @@
 from deta import Deta
 import os
+from dbsetup import getKey
 
-deta = Deta(os.environ.get('DETA_KEY'))
-
+deta = Deta(getKey())
 
 def run():
     users = deta.Base("users")
