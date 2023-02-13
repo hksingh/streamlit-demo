@@ -3,6 +3,7 @@ import streamlit as st #pip install streamlit
 import plotly.graph_objects as go # pip install plotly
 from datetime import datetime # core python module
 from streamlit_option_menu import option_menu # pip install streamlit-option-menu
+from db import getKey
 
 page_title = "Income and Expense Tracker12"
 page_icon=":money_with_wings:"
@@ -43,7 +44,9 @@ if selected == "Contact":
 
 # --- INPUT & SAVE PERIODS ---
 st.header(f'Data Entry in {currency}')
-with st.form("entry_form", clear_on_submit=True):
-    col1, col2 = st.columns(2)
-    col1.selectbox("Select Month : ", months, key="month")
-    col2.selectbox("Select Year : ", years, key="year")
+value = getKey()
+st.subheader(f'Deta Key {value}')
+# with st.form("entry_form", clear_on_submit=True):
+#     col1, col2 = st.columns(2)
+#     col1.selectbox("Select Month : ", months, key="month")
+#     col2.selectbox("Select Year : ", years, key="year")
